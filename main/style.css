@@ -1,15 +1,13 @@
 body {
     color: black;
     background-color: rgb(213, 185, 239);
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     }
 
 main {
     background-color: rgb(213, 185, 239);
-    width: 1000px;
-    height: auto;
-
+    padding: 10px;
 }
 
 h1.logo {
@@ -33,6 +31,7 @@ h1.logo {
 	line-height: 200%;
     background-color: #f0147b;
     text-align: center;
+    border-radius: 20px;
 }
 
 .menu > li
@@ -55,7 +54,6 @@ h1.logo {
 }
 
 #topnav {
-    background-color: #6114f0;
 	text-align: center;
     
 }
@@ -73,17 +71,40 @@ h1.logo {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .to-do {
+    background-color: rgb(233, 241, 83);
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+
 
 
 }
 
 .leki {
+    background-color: aquamarine;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
 
 }
 
 .tydzien {
-    
+    background-color: aquamarine;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
 }
