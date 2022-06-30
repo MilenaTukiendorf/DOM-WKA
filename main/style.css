@@ -72,6 +72,8 @@ h1.logo {
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
 }
 .to-do {
     background-color: rgb(233, 241, 83);
@@ -80,6 +82,9 @@ h1.logo {
     text-align: center;
     padding: 10px;
     margin: 10px;
+    font-size: 25px;
+    font-weight: 500;
+
 }
 
 .leki {
@@ -89,30 +94,29 @@ h1.logo {
     text-align: center;
     padding: 10px;
     margin: 20px;
+    font-size: 30px;
 
 }
 
 .tydzien {
     background-color: aquamarine;
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
     border-radius: 20px;
     text-align: center;
     padding: 10px;
     display: inline-block;
+    font-size: 20px;
     /* flex-direction: row ; */
     
 }
-@media screen and (max-width: 650px) {
-    .container {
-        flex-direction: column;
-    }
-}
+
 
 .dzien {
     background-color: #e162cc;
     margin: 5px;
     justify-content: center;
-    width: 100px;
+    padding: 10px;
+    
     
 }
 
@@ -120,8 +124,51 @@ h1.logo {
     justify-content: center;
     display: flex;
     flex-direction: row ;
+    flex-wrap: wrap;
 }
 
 .title {
     text-align: center;
+    font-size: 30px;
+}
+
+.leki-osoby {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+
+.row {
+    margin-top: 10px;
+}
+
+.col {
+  width: auto;  
+}
+
+.wypelnienie {
+    font-size: 15px;
+}
+
+table {
+    color: white;
+    background-color: rgb(35, 140, 35);
+    border-color: #130219;
+    width: 100%;
+    text-align: center ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input {
+    width: 100px;
+}
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
 }
