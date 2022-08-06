@@ -95,6 +95,7 @@ h1.logo {
     padding: 10px;
     margin: 20px;
     font-size: 30px;
+    
 
 }
 
@@ -136,8 +137,13 @@ h1.logo {
     font-size: 20px;
     text-align: left;
     margin-top: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    flex-wrap: wrap;
+}
 
+.label {
+    font-size: 20px;
+    width: auto;
 }
 
 
